@@ -1,6 +1,6 @@
 import Table from './components/Table';
 
-import './App.css';
+import "tailwindcss/tailwind.css";
 
 function App() {
   return (
