@@ -5,7 +5,7 @@ const useSearch = (cryptoData) => {
     const [filteredData, setFilteredData]  = useState(cryptoData);
     useEffect(() => {
         const result = cryptoData.filter(coinData => (
-            `${coinData.symbol} ${coinData.name}`.toLowerCase()
+            `${coinData.symbol} ${coinData.name} ${coinData.current_price}`.toLowerCase()
             .includes(search.toLowerCase())
         ));
         setFilteredData(result);

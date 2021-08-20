@@ -14,7 +14,7 @@ const useAPI = (API) => {
             console.log(error);
             setFetchError(true);
          });
-    }, []);
+    }, [API]);
     return [cryptoData, fetchError];
 }
 
