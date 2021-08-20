@@ -1,6 +1,7 @@
 import React from 'react';
 
 import TableRow from './TableRow';
+
 import useAPI from '../hooks/useAPI';
 import useSearch from '../hooks/useSearch';
 
@@ -30,6 +31,7 @@ export default function Table () {
                                 <th className="p-2">Precios USD</th>
                                 <th className="p-2">Precio 24 h</th>
                                 <th className="p-2">% 24 h</th>
+                                <th className="p-2">7 d</th>
                             </tr>
                         </thead>
                         <tbody>    
