@@ -2,20 +2,21 @@ import { useState, useEffect } from "react";
 
 const useAPI = (API) => {
     const [cryptoData, setCryptoData] = useState([]);
-    const [fetchError, setFetchError] = useState(null);
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
+       setLoading(true);
         fetch(API, {method: "GET"})
          .then(res => res.json())
          .then(response => {
             setCryptoData(response);
-            setFetchError(false)
+            setLoading(false);
          })
          .catch(error => {
             console.log(error);
-            setFetchError(true);
+            setLoading(true);
          });
     }, [API]);
-    return [cryptoData, fetchError];
+    return [cryptoData, loading];
 }
 
 export default useAPI;

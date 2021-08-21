@@ -14,7 +14,7 @@ export default function Footer () {
                 </a>
                 <a
                 className="text-green-500 duration-200 hover:text-gray-50"
-                href="https://www.coingecko.com/es/api"
+                href="https://www.coingecko.com/es/api/documentation"
                 target="_blank"
                 rel="noreferrer"
                 >
@@ -34,7 +34,7 @@ export default function Footer () {
                  rel="noreferrer"
                 >
                 by: Andrés Núñez&nbsp;
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
                 </a>
             </div>
         </div>
