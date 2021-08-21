@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 
-const useChartAPI = (API) => {
-    const [chartData, setChartData] = useState([]);
-    useEffect(() => {
-        fetch(API, {method: 'GET'})
-         .then(res => res.json())
-         .then(response => setChartData(response))
-         .catch(error => console.log(error));
-    }, [API]);
-    return chartData;
-}
+import useChartAPI from '../hooks/useChartAPI';
 
 export default function LineChart (props) {
     const API = (coin) => `https://api.coingecko.com/api/v3/coins/${coin.toLowerCase()}/market_chart?vs_currency=usd&days=7&interval=daily`;
