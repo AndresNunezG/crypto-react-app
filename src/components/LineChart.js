@@ -13,8 +13,8 @@ const useChartAPI = (API) => {
 }
 
 export default function LineChart (props) {
-    const API = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7&interval=daily";
-    const dataAPI = useChartAPI(API);
+    const API = (coin) => `https://api.coingecko.com/api/v3/coins/${coin.toLowerCase()}/market_chart?vs_currency=usd&days=7&interval=daily`;
+    const dataAPI = useChartAPI(API(props.coinData.name));
     const [dataChart, setDataChart] = useState([]);
     useEffect(() => {
         if (dataAPI.prices) {
@@ -49,8 +49,8 @@ export default function LineChart (props) {
         }
     };
     return (
-        <div className="px-8 w-full">
-        <Line data={data} options={options} />
+        <div className="py-2 px-8 w-52">
+            <Line data={data} options={options} />
         </div>
       )
 };

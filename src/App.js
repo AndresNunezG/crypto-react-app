@@ -1,5 +1,4 @@
 import Table from './components/Table';
-import LineChart from './components/LineChart';
 
 import "tailwindcss/tailwind.css";
 
