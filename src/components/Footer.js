@@ -29,7 +29,7 @@ export default function Footer () {
                 </p>
                 <a
                  className="duration-200 hover:text-green-500"
-                 href="https://www.coingecko.com/es/api"
+                 href="https://github.com/AndresNunezG"
                  target="_blank"
                  rel="noreferrer"
                 >
