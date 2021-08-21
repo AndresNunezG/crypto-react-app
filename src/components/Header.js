@@ -5,7 +5,7 @@ export default function Header () {
         <header className="w-full">
             <div className="w-full p-3 flex justify-center bg-gray-800">
                 <h1 className="text-4xl text-green-400">Crypto&nbsp;</h1>
-                <h1 className="text-4xl text-gray-300">Data</h1>
+                <h1 className="text-4xl text-gray-50">Data</h1>
             </div>
         </header>
     )

@@ -12,9 +12,12 @@ export default function Table () {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full bg-gray-300">
             <div className="m-8 w-3/12">
-                <i className="p-2.5 text-green-500 absolute fas fa-search"></i>
+                <label for="search" className="cursor-pointer">
+                    <i className="p-2.5 text-green-500 absolute fas fa-search"></i>
+                </label>
                 <input
-                 className="w-full px-8 py-1 rounded-lg border-2 border-gray-500 focus:outline-none focus:border-2 focus:border-blue-800"
+                 id="search"
+                 className="w-full px-8 py-1 rounded-lg border-2 border-gray-500 focus:outline-none focus:border-green-500"
                  onChange={e => setSearch(e.target.value)}
                  value={search}
                  placeholder="Buscar...">

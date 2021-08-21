@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Table from './components/Table';
+import Footer from './components/Footer';
 
 import "tailwindcss/tailwind.css";
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <Table />
+      <Footer />
     </div>
   );
 }
