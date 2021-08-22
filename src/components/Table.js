@@ -17,20 +17,20 @@ export default function Table () {
     }
     return (
         <div className="min-h-screen flex flex-col justify-star items-center w-full h-full bg-gray-300">
-            <div className="m-8 w-3/12">
+            <div className="m-8 min-w-min">
                 <label htmlFor="search" className="cursor-pointer">
                     <i className="p-2.5 text-green-500 absolute fas fa-search"></i>
                 </label>
                 <input
                  id="search"
-                 className="w-full px-8 py-1 rounded-lg border-2 border-gray-500 focus:outline-none focus:border-green-500"
+                 className="w-full px-8 py-1 rounded-lg border-2 border-gray-500 focus:outline-none focus:border-green-500 md:px-10"
                  onChange={e => setSearch(e.target.value)}
                  value={search}
                  placeholder="Buscar...">
                 </input>
             </div>
             <div className="w-full flex justify-center items-center mb-8">
-                <div className="w-10/12 rounded-xl">
+                <div className="w-10/12 rounded-xl overflow-scroll">
                     <table className="w-full border-collapse overflow-hidden rounded-xl table-auto">
                         <thead className="text-gray-50">
                             <tr className="bg-gray-800">
