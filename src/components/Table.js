@@ -30,7 +30,7 @@ export default function Table () {
                 </input>
             </div>
             <div className="w-full flex justify-center items-center mb-8">
-                <div className="w-10/12 rounded-xl overflow-scroll">
+                <div className="w-10/12 rounded-xl overflow-x-scroll">
                     <table className="w-full border-collapse overflow-hidden rounded-xl table-auto">
                         <thead className="text-gray-50">
                             <tr className="bg-gray-800">
